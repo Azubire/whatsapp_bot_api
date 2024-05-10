@@ -1,4 +1,5 @@
 import express from "express";
+import api from "./routes/api";
 
 const app = express();
 const port = 8000;
@@ -12,6 +13,8 @@ app.get("/", (_req, res) => {
     license: "MIT",
   });
 });
+
+app.use("/api/v1", api);
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
