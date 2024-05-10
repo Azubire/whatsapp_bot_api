@@ -10,7 +10,6 @@ app.get("/", (_req, res) => {
     version: "1.0.0",
     description: "A small api to process orders through whatsapp",
     author: "Azubire Peter",
-    license: "MIT",
   });
 });
 
